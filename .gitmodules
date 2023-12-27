@@ -1,6 +1,3 @@
-[submodule "nvim"]
-	path = nvim
-	url = https://github.com/DerFrZocker/.dotfiles-nvim.git
 [submodule "personal"]
-   path = personal
-   url = https://github.com/DerFrZocker/.dotfiles-personal.git
+	path = personal
+	url = git@github.com:DerFrZocker/.dotfiles-personal.git
