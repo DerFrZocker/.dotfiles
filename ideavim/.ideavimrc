@@ -7,3 +7,7 @@ nmap <leader>sc <Action>(GotoClass)
 nmap <leader>nc <Action>(NewClass)
 nmap <leader>nf <Action>(NewFile)
 nmap <leader>nd <Action>(NewDir)
+nmap <leader>ca <Action>(ShowIntentionActions)
+nmap <leader>ce <Action>(GotoNextError)
+nmap <leader>f <Action>(ReformatCode)
+
