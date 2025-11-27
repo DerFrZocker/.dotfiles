@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Expand to empty array on empty directory https://stackoverflow.com/a/30043243
+shopt -s nullglob
+
+fullpath="$(dirname "$(dirname "$(realpath "${0}")")")"
+
+for filename in ${fullpath}/bin/*; do
+  if [ ! -d "${filename}" ]; then
+    ln -v -s "$(realpath "${filename}")" "${HOME}/bin/$(basename "${filename}")"
+  fi
+done 
+

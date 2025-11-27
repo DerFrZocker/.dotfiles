@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+fullpath="$(dirname "$(dirname "$(realpath "$0")")")"
+
+ln -T -v -s "${fullpath}/nvim" "${HOME}/.config/nvim"
+
