@@ -1,0 +1,72 @@
+let mapleader=" "
+
+set scrolloff=5
+
+command-buffer Format :action ReformatCode
+command-buffer Terminal :action ActivateTerminalToolWindow
+command-buffer T :action ActivateTerminalToolWindow
+command-buffer Git :action VcsGroups
+command-buffer G :action VcsGroups
+command-buffer Run :action ChooseRunConfiguration
+command-buffer R :action ChooseRunConfiguration
+command-buffer RL :action Run
+command-buffer RF :action RunClass
+command-buffer Reload :action ExternalSystem.ProjectRefreshAction
+command-buffer O :action $LRU
+command-buffer GAE :action CloseAllEditors
+command-buffer GO :action CloseAllEditorsButActive
+command-buffer PIN :action PinActiveEditorTab
+
+nmap <leader>sf <Action>(GotoFile)
+nmap <leader>sc <Action>(GotoClass)
+nmap <leader>sg <Action>(TextSearchAction)
+nmap <leader>sa <Action>(SearchEverywhere)
+nmap <leader>sr <Action>(RecentFiles)
+
+nmap <leader>nc <Action>(NewClass)
+nmap <leader>nf <Action>(NewFile)
+nmap <leader>nd <Action>(NewDir)
+nmap <leader>ns <Action>(NewScratchFile)
+
+nmap <leader>ca <Action>(ShowIntentionActions)
+nmap <leader>ce <Action>(GotoNextError)
+
+nmap <leader>f <Action>(ReformatCode)
+
+nmap <leader>gr <Action>(RollbackChangedLines)
+
+nmap <leader>mc <Action>(Move)
+nmap <leader>cc <Action>(CopyElement)
+nmap <leader>rc <Action>(ChooseRunConfiguration)
+nmap <leader>rw <Action>(ChooseRunConfiguration)
+nmap <leader>rl <Action>(Run)
+nmap <leader>rf <Action>(RunClass)
+nmap <leader>rs <Action>(RunClass)
+
+nmap <leader>ae <Action>(RenameElement)
+nmap <leader>af <Action>(RenameFile)
+nmap <leader>h <Action>(HideActiveWindow)
+
+nmap <leader>tt <Action>(ActivateTerminalToolWindow)
+nmap <leader>tr <Action>(ActivateRunToolWindow)
+
+nmap <leader>bt <Action>(ToggleLineBreakpoint)
+nmap <leader>bv <Action>(ViewBreakpoints)
+nmap <leader>bma <Action>(XDebugger.MuteBreakpoints)
+nmap <leader>bmt <Action>(ToggleBreakpointEnabled)
+nmap <leader>pp <Action>(XDebugger.CopyValue)
+
+nmap <leader>dn <Action>(StepOver)
+nmap <leader>di <Action>(StepInto)
+nmap <leader>do <Action>(StepOut)
+nmap <leader>df <Action>(ForceStepInto)
+nmap <leader>dr <Action>(Resume)
+
+nmap <leader>lw <Action>(LayoutsGroup)
+nmap <leader>lc <Action>(ChangeToolWindowLayout)
+nmap <leader>lr <Action>(RestoreDefaultLayout)
+
+nmap gi <Action>(GotoImplementation)
+nmap gu <Action>(ShowUsages)
+nmap gc <Action>(CommentByLineComment)
+
