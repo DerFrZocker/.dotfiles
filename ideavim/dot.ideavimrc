@@ -30,6 +30,7 @@ nmap <leader>ns <Action>(NewScratchFile)
 
 nmap <leader>ca <Action>(ShowIntentionActions)
 nmap <leader>ce <Action>(GotoNextError)
+nmap <leader>cj <Action>(AIAssistant.Editor.AskAiAssistantInEditor)
 
 nmap <leader>f <Action>(ReformatCode)
 
