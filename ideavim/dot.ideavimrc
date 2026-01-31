@@ -34,7 +34,7 @@ nmap <leader>cj <Action>(AIAssistant.Editor.AskAiAssistantInEditor)
 
 nmap <leader>f <Action>(ReformatCode)
 
-nmap <leader>gr <Action>(RollbackChangedLines)
+nmap <leader>gr <Action>(Vcs.RollbackChangedLines)
 
 nmap <leader>mc <Action>(Move)
 nmap <leader>cc <Action>(CopyElement)
@@ -70,4 +70,3 @@ nmap <leader>lr <Action>(RestoreDefaultLayout)
 nmap gi <Action>(GotoImplementation)
 nmap gu <Action>(ShowUsages)
 nmap gc <Action>(CommentByLineComment)
-
