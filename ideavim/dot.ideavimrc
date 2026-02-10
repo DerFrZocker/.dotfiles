@@ -41,6 +41,7 @@ nmap <leader>cc <Action>(CopyElement)
 nmap <leader>rc <Action>(ChooseRunConfiguration)
 nmap <leader>rw <Action>(ChooseRunConfiguration)
 nmap <leader>rl <Action>(Run)
+nmap <leader>rk <Action>(Stop)
 nmap <leader>rf <Action>(RunClass)
 nmap <leader>rs <Action>(RunClass)
 
@@ -70,3 +71,5 @@ nmap <leader>lr <Action>(RestoreDefaultLayout)
 nmap gi <Action>(GotoImplementation)
 nmap gu <Action>(ShowUsages)
 nmap gc <Action>(CommentByLineComment)
+nmap gf <Action>(SelectInProjectView)
+
